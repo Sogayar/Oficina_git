@@ -3,16 +3,16 @@ Lembre-se, não é por que o código funciona, que ele está correto, preste ate
 
 
 '''
-'Questão 1'
+#'Questão 1'
 # Calcule as horas, minutos e segundos e posteriormente, printe os valores na tela.
-n = int(input())
+n = int(input('Tempo em segundos: '))
 
 hour = n // 3600
 n %= 3600
 minutes = n // 60
 n %= 60
-
-print("{:1d}:{:1d}:{:1d}".format())
+#adicionando as variaveis no parenteses do format
+print("{:1d}:{:1d}:{:1d}".format(hour, minutes, n))
 '''
 '''
 'Questão 2'
@@ -20,13 +20,18 @@ print("{:1d}:{:1d}:{:1d}".format())
 n = int(input('Digite um número: '))
 
 for  i in range(1,11):
-    pint('{} x {} = {}'.format()
-'''
+    #adicionando as variaveis no parenteses do format e a formatação
+    print('{} x {:02} = {}'.format(n, i, n * i))
 
+'''
 '''
 'Questão 3'
 # Faça um programa que calcule a média ponderada  de três notas, sabendo que cada nota possui seu peso
 
+#criei variaveis
+a = int(input('Nota 1: '))
+b = int(input('Nota 2: '))
+c = int(input('Nota 3: '))
 media = ((a*2) + (b*3) + (c*5))/10
 
 print('MEDIA = {:.1f}'.format(media))
@@ -34,20 +39,21 @@ print('MEDIA = {:.1f}'.format(media))
 '''
 'Questão 4'
 # Calcule o salário  do trabalhador.
-hours = int(input())
-value = float(input())
-
-salary = hours * vaIue
+hours = int(input('Horas: '))
+value = float(input('Valor: '))
+#variavel estava escrito errado
+salary = hours * value
 
 print('Salario = U$ {:.2f}'.format(salary))
 '''
 '''
 'Questão 5'
 # Calcule o volume da esfera
-radiu = float(input())
+#Variaveis escrita errada (volume e radius)
+radius = float(input())
 pi = 3.14159
 
-voIume = (4/3) * pi * radius**3
+volume = (4/3) * pi * radius**3
 
 print('VOLUME = {:.3f}'.format(volume))
 '''
@@ -59,7 +65,8 @@ a, b, c = map(int, input().split())
 
 if a > b:
     maior = a
-if:
+#colocando condição no if
+if b > maior:
     maior = b
 
 if c > maior:
@@ -86,7 +93,8 @@ if a >= 0 and  a <= 25:
 if a > 25 and a <= 50:
     print('Intervalo (25,50]')
 if a > 50 and a <= 75:
-    print('Intervalo [50,75]')
+    #parenteses "maior que" adicionado
+    print('Intervalo (50,75]')
 if a > 75 and a <= 100:
     print('Intervalo (75,100]')
 
@@ -99,12 +107,14 @@ n = int(input())
 for i in range (0,n):
     i = int(input())
     if i > 0:
-        if i%2 = 0:
+        # adicionando '==' comparação
+        if i%2 == 0:
             print('Par Positivo')
         else:
             print('Ímpar Positivo')
     elif i < 0:
-        if i%2 = 0:
+        # adicionando '==' comparação
+        if i%2 == 0:
             print('Par Negativo')
         else:
             print('Ímpar Negativo')
@@ -114,8 +124,9 @@ for i in range (0,n):
 '''
 'Questão 9'
 # Calcule o produto de  dois números inteiros fornecidos pelo usuário.
-a = float(input())
-b = float(input())
+#Variavel alterada de float para  int
+a = int(input())
+b = int(input())
 
 prod = a + b
 
@@ -128,6 +139,7 @@ a = int(input())
 b = int(input())
 c = int(input())
 d = int(input())
-
+#criando variavel diff
+diff = (a * b) - (c * d)
 print('Diferença =', diff)
 '''
