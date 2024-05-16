@@ -2,35 +2,42 @@
 Lembre-se, não é por que o código funciona, que ele está correto, preste atenção nisso """
 
 
-'''
+
 'Questão 1'
 # Calcule as horas, minutos e segundos e posteriormente, printe os valores na tela.
-n = int(input())
+
+"""n = int(input("Digite o valor dos segundos para ser calculado as horas, minutos e segundos:"))
 
 hour = n // 3600
 n %= 3600
 minutes = n // 60
 n %= 60
 
-print("{:1d}:{:1d}:{:1d}".format())
-'''
-'''
+print(f"{hour}Hours:{minutes}Minutes:{n}Seconds")
+ #Foi alterado a linha 9, colocando uma mensagem que deixou explicito o pedido da questão,A linha 16 foi adicionado os valores e suas atribuições
+"""
+
 'Questão 2'
-# Faça um programa que calcule a tabuada
+"""# Faça um programa que calcule a tabuada
 n = int(input('Digite um número: '))
 
-for  i in range(1,11):
-    pint('{} x {} = {}'.format()
-'''
+for i in range(1, 11):
+    mult = n * i
+    print(f'{n} x {i} = {mult}')
+#Foi consertado a formatação de alguns comandos, além da adição da variavel multi com o intuito do código mostrar os resultados
+    """
 
-'''
+
+
 'Questão 3'
-# Faça um programa que calcule a média ponderada  de três notas, sabendo que cada nota possui seu peso
-
+"""# Faça um programa que calcule a média ponderada  de três notas, sabendo que cada nota possui seu peso
+a = float(input("Digite sua nota:"))
+b = float(input("Digite sua nota:"))
+c = float(input("Digite sua nota:"))
 media = ((a*2) + (b*3) + (c*5))/10
 
-print('MEDIA = {:.1f}'.format(media))
-'''
+print(f'MEDIA = {media:.1f}') #Adição do input das variáveis para o calculo da média.
+"""
 '''
 'Questão 4'
 # Calcule o salário  do trabalhador.
