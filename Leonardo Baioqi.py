@@ -2,7 +2,6 @@
 Lembre-se, não é por que o código funciona, que ele está correto, preste atenção nisso """
 
 
-'''
 'Questão 1'
 # Calcule as horas, minutos e segundos e posteriormente, printe os valores na tela.
 n = int(input())
@@ -12,7 +11,7 @@ n %= 3600
 minutes = n // 60
 n %= 60
 
-print("{:1d}:{:1d}:{:1d}".format())
+print("{:1d}:{:1d}:{:1d}".format(hour, minutes, n))
 '''
 '''
 'Questão 2'
@@ -20,12 +19,13 @@ print("{:1d}:{:1d}:{:1d}".format())
 n = int(input('Digite um número: '))
 
 for  i in range(1,11):
-    pint('{} x {} = {}'.format()
-'''
+    print('{} x {} = {}'.format(n, i, (n * i)))
 
-'''
 'Questão 3'
 # Faça um programa que calcule a média ponderada  de três notas, sabendo que cada nota possui seu peso
+a = float(input("Nota a: "))
+b = float(input("Nota b: "))
+c = float(input("Nota c: "))
 
 media = ((a*2) + (b*3) + (c*5))/10
 
@@ -37,19 +37,19 @@ print('MEDIA = {:.1f}'.format(media))
 hours = int(input())
 value = float(input())
 
-salary = hours * vaIue
+salary = hours * value
 
 print('Salario = U$ {:.2f}'.format(salary))
 '''
 '''
 'Questão 5'
 # Calcule o volume da esfera
-radiu = float(input())
+radius = float(input())
 pi = 3.14159
 
 voIume = (4/3) * pi * radius**3
 
-print('VOLUME = {:.3f}'.format(volume))
+print('VOLUME = {:.3f}'.format(voIume))
 '''
 '''
 'Questão 6'
@@ -59,7 +59,7 @@ a, b, c = map(int, input().split())
 
 if a > b:
     maior = a
-if:
+if a < b:
     maior = b
 
 if c > maior:
@@ -84,11 +84,11 @@ if a < 0 or a > 100:
 if a >= 0 and  a <= 25:
     print('Intervalo [0,25]')
 if a > 25 and a <= 50:
-    print('Intervalo (25,50]')
+    print('Intervalo [25,50]')
 if a > 50 and a <= 75:
     print('Intervalo [50,75]')
 if a > 75 and a <= 100:
-    print('Intervalo (75,100]')
+    print('Intervalo [75,100]')
 
 '''
 '''
@@ -99,12 +99,12 @@ n = int(input())
 for i in range (0,n):
     i = int(input())
     if i > 0:
-        if i%2 = 0:
+        if i%2 == 0:
             print('Par Positivo')
         else:
             print('Ímpar Positivo')
     elif i < 0:
-        if i%2 = 0:
+        if i%2 == 0:
             print('Par Negativo')
         else:
             print('Ímpar Negativo')
@@ -129,5 +129,6 @@ b = int(input())
 c = int(input())
 d = int(input())
 
+diff = (a * b) - (c * d)
+
 print('Diferença =', diff)
-'''
