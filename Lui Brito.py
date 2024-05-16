@@ -5,7 +5,7 @@ Lembre-se, não é por que o código funciona, que ele está correto, preste ate
 '''
 #'Questão 1'
 # Calcule as horas, minutos e segundos e posteriormente, printe os valores na tela.
-n = int(input(''))
+n = int(input())
 
 hour = n // 3600
 n %= 3600
