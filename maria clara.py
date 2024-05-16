@@ -5,23 +5,25 @@ Lembre-se, não é por que o código funciona, que ele está correto, preste ate
 '''
 'Questão 1'
 # Calcule as horas, minutos e segundos e posteriormente, printe os valores na tela.
-n = int(input())
+
+n = int(input("Digite o número:"))
 
 hour = n // 3600
 n %= 3600
 minutes = n // 60
 n %= 60
+print(f"{hour:1d}:{minutes:1d}")
+'''
 
-print("{:1d}:{:1d}:{:1d}".format())
-'''
-'''
 'Questão 2'
 # Faça um programa que calcule a tabuada
+
 n = int(input('Digite um número: '))
 
-for  i in range(1,11):
-    pint('{} x {} = {}'.format()
-'''
+for n in range(1,11):
+    
+    print(f"{} * {} = {}")
+
 
 '''
 'Questão 3'
