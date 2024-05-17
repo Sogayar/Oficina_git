@@ -2,15 +2,19 @@
 Lembre-se, não é por que o código funciona, que ele está correto, preste atenção nisso """
 
 
+
+
 '''
 'Questão 1'
 # Calcule as horas, minutos e segundos e posteriormente, printe os valores na tela.
 n = int(input())
 
+
 hour = n // 3600
 n %= 3600
 minutes = n // 60
 n %= 60
+
 
 print("{:1d}:{:1d}:{:1d}".format())
 '''
@@ -19,15 +23,19 @@ print("{:1d}:{:1d}:{:1d}".format())
 # Faça um programa que calcule a tabuada
 n = int(input('Digite um número: '))
 
+
 for  i in range(1,11):
     pint('{} x {} = {}'.format()
 '''
+
 
 '''
 'Questão 3'
 # Faça um programa que calcule a média ponderada  de três notas, sabendo que cada nota possui seu peso
 
+
 media = ((a*2) + (b*3) + (c*5))/10
+
 
 print('MEDIA = {:.1f}'.format(media))
 '''
@@ -37,7 +45,9 @@ print('MEDIA = {:.1f}'.format(media))
 hours = int(input())
 value = float(input())
 
+
 salary = hours * vaIue
+
 
 print('Salario = U$ {:.2f}'.format(salary))
 '''
@@ -47,7 +57,9 @@ print('Salario = U$ {:.2f}'.format(salary))
 radiu = float(input())
 pi = 3.14159
 
+
 voIume = (4/3) * pi * radius**3
+
 
 print('VOLUME = {:.3f}'.format(volume))
 '''
@@ -57,13 +69,17 @@ print('VOLUME = {:.3f}'.format(volume))
 a, b, c = map(int, input().split())
 
 
+
+
 if a > b:
     maior = a
 if:
     maior = b
 
+
 if c > maior:
     maior = c
+
 
 # Printing the result
 print(maior, "É o maior")
@@ -89,8 +105,8 @@ if a > 50 and a <= 75:
     print('Intervalo [50,75]')
 if a > 75 and a <= 100:
     print('Intervalo (75,100]')
-
 '''
+
 '''
 'Questão 8'
 # Faça um programa que, verifica os números digitados em uma quantidade de vezes definida pelo usuário.
@@ -99,28 +115,35 @@ n = int(input())
 for i in range (0,n):
     i = int(input())
     if i > 0:
-        if i%2 = 0:
+        #Coloquei '=='
+        if i%2 == 0:
             print('Par Positivo')
         else:
             print('Ímpar Positivo')
     elif i < 0:
-        if i%2 = 0:
+        #coloquei '=='
+        if i%2 == 0:
             print('Par Negativo')
         else:
             print('Ímpar Negativo')
     else:
         print('NULL')
 '''
+        
 '''
 'Questão 9'
 # Calcule o produto de  dois números inteiros fornecidos pelo usuário.
-a = float(input())
-b = float(input())
+#Troquei a função 'float' por 'int' ja que o imput são de numeros inteiros
+a = int(input())
+b = int(input())
+
 
 prod = a + b
 
+
 print('Produto =',prod)
 '''
+
 '''
 'Questão 10'
 # Calcule a diferença entre A * B e C * D
@@ -128,6 +151,8 @@ a = int(input())
 b = int(input())
 c = int(input())
 d = int(input())
+#Adicionei a variavel 'diff'
+diff = (a*b)-(c*d)
 
 print('Diferença =', diff)
 '''
