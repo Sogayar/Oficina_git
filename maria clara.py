@@ -14,21 +14,23 @@ minutes = n // 60
 n %= 60
 print(f"{hour:1d}:{minutes:1d}")
 '''
-
+'''
 'Questão 2'
 # Faça um programa que calcule a tabuada
 
 n = int(input('Digite um número: '))
 
-for n in range(1,11):
+for i in range(1,11):
     
-    print(f"{} * {} = {}")
-
+    print(f"{n} * {i} = {n*i}")
+'''
 
 '''
 'Questão 3'
 # Faça um programa que calcule a média ponderada  de três notas, sabendo que cada nota possui seu peso
-
+a = int(input('Digite sua 1º nota :'))
+b = int(input('Digite a sua 3º nota :'))
+c = int(input('Digite sua 3º nota :'))
 media = ((a*2) + (b*3) + (c*5))/10
 
 print('MEDIA = {:.1f}'.format(media))
