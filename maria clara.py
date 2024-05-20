@@ -38,23 +38,23 @@ print('MEDIA = {:.1f}'.format(media))
 '''
 'Questão 4'
 # Calcule o salário  do trabalhador.
-hours = int(input())
-value = float(input())
+hours = int(input("Digite suas horas de trabalho :"))
+value = float(input("Digite seu salário :"))
 
-salary = hours * vaIue
+salary = hours * value
 
 print('Salario = U$ {:.2f}'.format(salary))
 '''
-'''
+
 'Questão 5'
 # Calcule o volume da esfera
-radiu = float(input())
+radiu = float(input("Digite o raio da esfera :"))
 pi = 3.14159
 
-voIume = (4/3) * pi * radius**3
+volume = (4/3) * pi * radiu**3
 
 print('VOLUME = {:.3f}'.format(volume))
-'''
+
 '''
 'Questão 6'
 # Dica: o único erro desta questão está no "if clause".
