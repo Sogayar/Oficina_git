@@ -45,7 +45,7 @@ salary = hours * value
 
 print('Salario = U$ {:.2f}'.format(salary))
 '''
-
+'''
 'Questão 5'
 # Calcule o volume da esfera
 radiu = float(input("Digite o raio da esfera :"))
@@ -54,16 +54,17 @@ pi = 3.14159
 volume = (4/3) * pi * radiu**3
 
 print('VOLUME = {:.3f}'.format(volume))
-
+'''
 '''
 'Questão 6'
 # Dica: o único erro desta questão está no "if clause".
-a, b, c = map(int, input().split())
+a, b, c = map(int, input("Digite 3 números separados por espaço :").split())
 
+maior = a
 
 if a > b:
     maior = a
-if:
+if b > maior:
     maior = b
 
 if c > maior:
@@ -72,16 +73,19 @@ if c > maior:
 # Printing the result
 print(maior, "É o maior")
 '''
+
 '''
 'Questão 7'
-"""Você deve fazer um programa que leia um valor qualquer e apresente uma mensagem dizendo em qual dos seguintes intervalos ([0,25], (25,50], (50,75], (75,100])
-este valor se encontra. Obviamente se o valor não estiver em nenhum destes intervalos, deverá ser impressa a mensagem “Fora de intervalo”.
+"""Você deve fazer um programa que leia um valor qualquer e apresente uma mensagem dizendo em qual dos seguintes intervalos
+ ([0,25], (25,50], (50,75], (75,100])
+este valor se encontra. Obviamente se o valor não estiver em nenhum destes intervalos, deverá ser impressa a mensagem 
+“Fora de intervalo”.
 
 O símbolo ( representa "maior que". Por exemplo:
 [0,25]  indica valores entre 0 e 25.0000, inclusive eles.
 (25,50] indica valores maiores que 25 Ex: 25.00001 até o valor 50.0000000"""
 
-a = float(input())
+a = float(input("Digite um valor: "))
 
 if a < 0 or a > 100:
     print('Fora de intervalo')  
@@ -93,22 +97,21 @@ if a > 50 and a <= 75:
     print('Intervalo [50,75]')
 if a > 75 and a <= 100:
     print('Intervalo (75,100]')
-
 '''
 '''
 'Questão 8'
 # Faça um programa que, verifica os números digitados em uma quantidade de vezes definida pelo usuário.
 # A verificação vai dizer se ele é par, ímpar, positivo, negativo ou Nulo
-n = int(input())
+n = int(input("Digite a quantidade de vezes que dezeja repetir: "))
 for i in range (0,n):
-    i = int(input())
+    i = int(input("Digite um numero: "))
     if i > 0:
-        if i%2 = 0:
+        if i%2 == 0:
             print('Par Positivo')
         else:
             print('Ímpar Positivo')
     elif i < 0:
-        if i%2 = 0:
+        if i%2 == 0:
             print('Par Negativo')
         else:
             print('Ímpar Negativo')
@@ -118,8 +121,8 @@ for i in range (0,n):
 '''
 'Questão 9'
 # Calcule o produto de  dois números inteiros fornecidos pelo usuário.
-a = float(input())
-b = float(input())
+a = float(input("Digite o 1º numero: "))
+b = float(input("Digite o 2º numero: "))
 
 prod = a + b
 
@@ -128,10 +131,15 @@ print('Produto =',prod)
 '''
 'Questão 10'
 # Calcule a diferença entre A * B e C * D
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
+a = int(input("Digite o 1º numero: "))
+b = int(input("Digite o 2º numero: "))
+c = int(input("Digite o 3º numero: "))
+d = int(input("Digite o 4º numero: "))
+
+cal1 = a*b
+cal2 = c*d
+
+diff = a
 
 print('Diferença =', diff)
 '''
